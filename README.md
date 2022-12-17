@@ -20,3 +20,5 @@ python getdt.py 'ACC.NS,TCS.NS'
 
 Here ACC.NS and TCS.NS are ticker names in yahoo finance for two stocks in National Stock Exchange of India. Two CSV files will be generated after
 succesful run which will contain intraday data of these stocks.
+
+Then you can import the CSV files in applications such as amibroker
