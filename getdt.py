@@ -6,7 +6,7 @@ ticker_string = sys.argv[1]
 print ("symbol: "+ticker_string)
 tickers=ticker_string.split(",")
 for ticker in tickers:
-    data = yf.download (tickers=ticker, period = '1d', interval = '5m')#reset the index and move the old index to a new column 5m', rounding= True)
+    data = yf.download (tickers=ticker, period = '5d', interval = '5m')#reset the index and move the old index to a new column 5m', rounding= True)
     data['Symbol'] = ticker
     data.reset_index (inplace=True)
 
